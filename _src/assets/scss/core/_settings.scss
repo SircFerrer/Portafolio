@@ -1,1 +1,15 @@
-$color-white: #f3f4f5;
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #f3f3f3;
+  font-family: "Open Sans", sans-serif;
+}
+.active {
+  color: #000;
+}
