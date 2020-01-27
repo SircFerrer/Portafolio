@@ -30,6 +30,35 @@ window.addEventListener('load', () => {
         grid.filter((item) => item.getElement().dataset.labels.includes(search))
 
     })
+
+    // Agregamos los listeners a las imágenes
+
+    const overlay = document.getElementById("overlay");
+    document.querySelectorAll(".grid__item__content__img").forEach((element) => {
+        element.addEventListener("click", () => {
+            const ruta = element.getAttribute("src")
+            const description = element.parentNode.parentNode.dataset.description;
+            overlay.classList.add("active")
+            document.querySelector("#overlay img").src = ruta;
+            document.querySelector("#overlay p").innerHTML = description;
+
+        })
+
+
+
+    })
+
+    //Event listener boton cerrar
+
+    document.querySelector("#btn-close-popup").addEventListener("click", () => {
+        overlay.classList.remove("active")
+    })
+    // Event listener del overlay
+
+    overlay.addEventListener("click", (ev) => {
+        ev.target.id === "overlay" ? overlay.classList.remove("active") : ""
+    })
+
 })
 
 
