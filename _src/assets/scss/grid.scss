@@ -1,0 +1,29 @@
+// img {
+//   width: 30rem;
+//   height: 30rem;
+// }
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 1s;
+  &__item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 1rem;
+    width: 33.33%;
+    &__content {
+      position: relative;
+
+      &__img {
+        width: 100%;
+        cursor: pointer;
+        vertical-align: top;
+      }
+    }
+  }
+}
+.loadImg {
+  opacity: 1;
+}
