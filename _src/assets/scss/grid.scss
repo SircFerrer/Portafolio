@@ -12,10 +12,9 @@
     display: block;
     padding: 0;
     margin: 1rem;
-    width: 33.33%;
+    width: 30%;
     &__content {
       position: relative;
-
       &__img {
         width: 100%;
         cursor: pointer;
@@ -24,6 +23,7 @@
     }
   }
 }
+
 .loadImg {
   opacity: 1;
 }
