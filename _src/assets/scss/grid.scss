@@ -27,3 +27,8 @@
 .loadImg {
   opacity: 1;
 }
+@media screen and (max-width: 700px) {
+  .grid__item {
+    width: 50%;
+  }
+}

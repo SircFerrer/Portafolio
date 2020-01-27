@@ -1,0 +1,48 @@
+.container {
+  &__social-media {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  &__description {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #c13584;
+  }
+}
+
+.link {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background: #000;
+  color: #fff;
+  margin: 2rem;
+  text-align: center;
+  border-radius: 10rem;
+  transition: 0.3s ease all;
+}
+.twitter {
+  background: #1da1f2;
+}
+.linkedin {
+  background: #0e76a8;
+}
+.fab {
+  font-size: 2rem;
+  line-height: 6rem;
+}
+.icon:hover a {
+  animation: icono 0.5s ease;
+}
+@keyframes icono {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
