@@ -1,6 +1,6 @@
-img {
-  width: 25rem;
-  height: 25rem;
+.img-overlay {
+  width: 35rem;
+  height: 35rem;
   max-width: 100%;
 }
 .overlay {
@@ -18,6 +18,9 @@ img {
   flex-direction: column;
   &__img {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__description {
       display: block;
@@ -27,6 +30,7 @@ img {
       margin-top: 0.5rem;
       border-radius: 1rem;
       max-width: 50%;
+      font-size: 1.8rem;
     }
   }
 }
