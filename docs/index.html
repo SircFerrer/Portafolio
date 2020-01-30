@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://kit.fontawesome.com/974d05a888.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <title>Portafolio Cristina Ferrer</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header__logo">
+                     <h1 class="header__title">Cristina Ferrer Carballo</h1>
+
+                    <p class="header__subtitle">Desarrolladora Front End</p>
+                </div>
+                <form class="header__search" action="">
+                    <input type="text" class="header__search__menu" id="search-menu" placeholder="Buscar"
+                    />
+                </form>
+                <div class="header__options" id="header__options"> <a href="#" class="active">Todos</a>
+ <a href="#">Trabajo</a>
+ <a href="#">Universidad</a>
+
+                    <a
+                    href="#">Familia</a> <a href="#">Lugares</a>
+
+                </div>
+            </header>
+            <section class="grid" id="grid">
+                <div class="grid__item" data-category="Lugares" data-labels="lugares bicis barcelona"
+                data-description="Barcelona, mi ciudad natal, mis recuerdos se mezclan entre el sonido del mar y los paseos en bici con mi yayo">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/barcelona_opt.jpg"
+                        alt="Barcelona" />
+                    </div>
+                </div>
+                <div class="grid__item" data-category="Lugares" data-labels="lugares colores bogota"
+                data-description="Bogotá, ciudad de colores, música y alegria. Durante 4 años pude vivir en esta preciosa ciudad">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/bogota_opt.jpg"
+                        alt="Bogotá" />
+                    </div>
+                </div>
+                <div class="grid__item" data-category="Trabajo" data-labels="trabajo frontEnd adalab desarrollo"
+                data-description="Adalab, me ha permitido reinventarme como desarrolladora front-end, ahora estoy buscando una oportunidad laboral">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/developer_opt.jpg"
+                        alt="Desarrolladora" />
+                    </div>
+                </div>
+                <div class="grid__item" data-category="Familia" data-labels="familia amor hijo vida"
+                data-description="Mi familia me completa y llena mis días de risas, esfuerzo y superación">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/family_opt.jpg"
+                        alt="Familia" />
+                    </div>
+                </div>
+                <div class="grid__item" data-category="Lugares" data-labels="lugares lima amor familia peru"
+                data-description="Perú me permitió conocer el amor y traerme una parte de su color, fuerza y amor para formar mi familia">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/peru_opt.jpg"
+                        alt="Perú" />
+                    </div>
+                </div>
+                <div class="grid__item" data-category="Lugares" data-labels="lugares colegio naturaleza nieve"
+                data-description="Princeton, fue una ciudad donde pude conocer gente de todo el mundo, fui muy feliz y tuve la oportunidad de vivir mi propia película americana">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/princeton_opt.jpg"
+                        alt="Princeton" />
+                    </div>
+                </div>
+                <div class="grid__item" data-category="Trabajo" data-labels="trabajo consultora público"
+                data-description="He tenido la suerte de trabajar en PwC y en KPMG como consultora del sector público">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/torres_opt.jpg"
+                        alt="Torres" />
+                    </div>
+                </div>
+                <div class="grid__item" data-category="Universidad" data-labels="universidad estudios políticas"
+                data-description="Licenciada en Ciencias Políticas por la Universidad Complutense de Madrid">
+                    <div class="grid__item__content">
+                        <img class="grid__item__content__img" src="../assets/images/uni_opt.jpg"
+                        alt="Universidad" />
+                    </div>
+                </div>
+            </section>
+            <section class="overlay" id="overlay">
+                <div class="overlay__img">
+                    <button id="btn-close-popup"><i class="fas fa-times"></i>
+
+                    </button>
+                    <img class="img-overlay" src="" alt="barcelona" />
+                    <p class="overlay__img__description"></p>
+                </div>
+            </section>
+            <footer class="container">
+                <div class="container__social-media">
+                    <div class="icon"> <a href="https://twitter.com/sircferrer" target="_blank" class="link twitter">
+        <i class="fab fa-twitter"></i
+      ></a>
+
+                    </div>
+                    <div class="icon"> <a href="https://github.com/SircFerrer" target="_blank" class="link github">
+        <i class="fab fa-github-square"></i>
+      </a>
+
+                    </div>
+                    <div class="icon"> <a href="https://www.linkedin.com/in/cristinaferrercarballo/" target="_blank"
+                        class="link linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+                    </div>
+                </div>
+                <div class="container__description">
+                    <p>Portafolio de Cristina Ferrer Carballo</p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+        <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+
+</html>
